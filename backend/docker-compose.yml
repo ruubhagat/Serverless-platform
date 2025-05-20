@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  runsc-installer:
+    image: gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+    command: ["runsc", "--version"]
+    volumes:
+     - /mnt/D:/6th_sem/CCproject/serverless-platform/backend/runsc.exe  # Mount your local disk to Docker if required
